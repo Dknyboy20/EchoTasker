@@ -21,7 +21,7 @@ If you haven't already, download the 3 files in the lambda folder of this reposi
 Go to aws.amazon.com and sign up for an account. Make sure in the top right it says N. Virginia, that is needed for some reason. On the left under "Compute" click on "lambda".
 - Click on create a lambda function
 - On the select blueprint screen go to the bottom and click skip
-- Enter a name and description. Under lambda function code choose upload a zip file. Zip up the 3 files in the lambda folder of this repository (make sure you added your amazon app id and autoremote key to the options.js file).
+- Enter a name and description. Under lambda function code choose upload a zip file. Zip up only the 3 .js files in this repository (make sure you added your amazon app id and autoremote key to the options.js file).
 - Under role on the page click basic execution role. This will have a pop up you'll need to click allow. Leave the rest to the defaults filled in. Then click create lambda function at the bottom.
 - On the next page there should be an ARN address at the top right, copy that and we'll paste it in the alexa skill ARN address.
 - Click on the event sources. Add event source. Select Alexa Skills kit and submit.
