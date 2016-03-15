@@ -54,6 +54,8 @@ Also read below information from Amazon. It will explain the variable type we ar
 #From Amazon
 https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/alexa-skills-kit-interaction-model-reference
 
+(Just FYI, good read on how it works.)
+
 LITERAL Slot Type Reference
 
 The AMAZON.LITERAL slot type passes the words for the slot value with no conversion. This is primarily provided for compatibility with earlier versions of the Alexa Skills Kit and some very limited cases in which the built-in and custom slot types are not appropriate. For situations in which the slot value can be one of a set of known values, use a custom slot type instead. For information about migrating a skill from AMAZON.LITERAL to a custom type, see Migrating to the Improved Built-in and Custom Slot Types.
