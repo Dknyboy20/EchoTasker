@@ -48,3 +48,48 @@ Examples are: "Alexa, tell Tasker to text (Person) (message)"
 "Alexa, tell Tasker to (AutoRemote message)"
 
 Sometimes if you just say Tell Tasker (message) it doesn't capture. It sometimes wants an "ask Tasker for" "tell Tasker to" format.
+
+Also read below information from Amazon. It will explain the variable type we are using to pass the message. I only included samples up to 7 words long. They recommend multiple samples up to the length of the longest set of words you intend to pass. So you may want to add some to the utterances if you are seeing problems passing the messages. It also recommends against using "meaningless placeholder words in the sample phrase just to fill the slot with the right number of words" but I did that and it seems to work fine. Occassionally though I do notice if it doesn't hear me correctly it will pass one of the samples in the utterances as the AutoRemote message.
+
+#From Amazon
+https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/alexa-skills-kit-interaction-model-reference
+
+LITERAL Slot Type Reference
+
+The AMAZON.LITERAL slot type passes the words for the slot value with no conversion. This is primarily provided for compatibility with earlier versions of the Alexa Skills Kit and some very limited cases in which the built-in and custom slot types are not appropriate. For situations in which the slot value can be one of a set of known values, use a custom slot type instead. For information about migrating a skill from AMAZON.LITERAL to a custom type, see Migrating to the Improved Built-in and Custom Slot Types.
+
+When using AMAZON.LITERAL, you must include sample slot values within the curly brackets defining the slot in the utterance:
+
+StatusUpdate    post the update {out at lunch|UpdateText}
+Note the following rules and recommendations.
+
+Include samples with different numbers of words for the slot value:
+
+Samples with the minimum number of words you expect for the slot value.
+Samples with the maximum number of words for the slot value.
+Samples with all varying numbers of words between the minimum and the maximum expected.
+These samples should always include only slot values that represent actual phrases the user might say. Do not use meaningless placeholder words in the sample phrase just to fill the slot with the right number of words. Instead, fill the sample slot value with real-world examples of the data you want to collect in the slot.
+
+If you are using the AMAZON.LITERAL type to collect free-form text with wide variations in the number of words that might be in the slot, note the following:
+
+Covering this full range (minimum, maximum, and all in between) will require a very large set of samples. Try to provide several hundred samples or more to address all the variations in slot value words as noted above.
+Keep the phrases within slots short enough that users can say the entire phrase without needing to pause.
+Lengthy spoken input can lead to lower accuracy experiences, so avoid designing a spoken language interface that requires more than a few words for a slot value. A phrase that a user cannot speak without pausing is too long for a slot value.
+
+For example, the intent for an ability that posts the user’s spoken words to a social media site might have an UpdateText slot that collects the text to post. Values for this slot range from just one word to about nine or ten words. The sample utterances to support this intent should cover a range of words such as the following:
+
+1
+2
+3
+4
+5
+6
+7
+StatusUpdate    post the update {arrived|UpdateText}
+StatusUpdate    post the update {dinner time|UpdateText}
+StatusUpdate    post the update {out at lunch|UpdateText}
+ 
+...(more samples showing phrases with  4-10 words)
+ 
+StatusUpdate    post the update {going to stop by the grocery store this evening|UpdateText}
+This set includes sample slot values ranging from one word (“arrived”) to about ten words. This type of sample coverage should provide better recognition.
