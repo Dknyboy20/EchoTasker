@@ -1,0 +1,40 @@
+TaskerIntent {hello|Message}
+TaskerIntent {what's up|Message}
+TaskerIntent {i am home|Message}
+TaskerIntent {what are you doing|Message}
+TaskerIntent {who ate my captain crunch|Message}
+TaskerIntent {what is taking you so long|Message}
+TaskerIntent {i forgot to pick up groceries today|Message}
+TaskerIntent {The bees don't want us to eat honey|Message}
+
+SMSIntent text {Person} {hello|Message}
+SMSIntent text {Person} {what's up|Message}
+SMSIntent text {Person} {i am home|Message}
+SMSIntent text {Person} {what are you doing|Message}
+SMSIntent text {Person} {who ate my captain crunch|Message}
+SMSIntent text {Person} {what is taking you so long|Message}
+SMSIntent text {Person} {i forgot to pick up groceries today|Message}
+
+SMSIntent send a message to {Person} {hello|Message}
+SMSIntent send a message to {Person} {what's up|Message}
+SMSIntent send a message to {Person} {i am home|Message}
+SMSIntent send a message to {Person} {what are you doing|Message}
+SMSIntent send a message to {Person} {who ate my captain crunch|Message}
+SMSIntent send a message to {Person} {what is taking you so long|Message}
+SMSIntent send a message to {Person} {i forgot to pick up groceries today|Message}
+
+SMSIntent send {Person} a message {hello|Message}
+SMSIntent send {Person} a message {what's up|Message}
+SMSIntent send {Person} a message {i am home|Message}
+SMSIntent send {Person} a message {what are you doing|Message}
+SMSIntent send {Person} a message {who ate my captain crunch|Message}
+SMSIntent send {Person} a message {what is taking you so long|Message}
+SMSIntent send {Person} a message {i forgot to pick up groceries today|Message}
+
+SMSIntent send {Person} a text {hello|Message}
+SMSIntent send {Person} a text {what's up|Message}
+SMSIntent send {Person} a text {i am home|Message}
+SMSIntent send {Person} a text {what are you doing|Message}
+SMSIntent send {Person} a text {who ate my captain crunch|Message}
+SMSIntent send {Person} a text {what is taking you so long|Message}
+SMSIntent send {Person} a text {i forgot to pick up groceries today|Message}

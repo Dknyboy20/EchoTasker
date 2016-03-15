@@ -1,0 +1,26 @@
+{
+    "intents": [
+    {
+      "intent":  "TaskerIntent",
+      "slots": [
+        {
+            "name": "Message",
+            "type": "AMAZON.LITERAL"
+        }
+      ]
+    },
+    {
+      "intent":  "SMSIntent",
+      "slots": [
+        {
+            "name": "Message",
+            "type": "AMAZON.LITERAL"
+        },
+        {
+            "name": "Person",
+            "type": "PEOPLE"
+        }
+      ]
+    }
+  ]
+}
