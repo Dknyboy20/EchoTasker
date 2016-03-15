@@ -97,3 +97,8 @@ StatusUpdate    post the update {out at lunch|UpdateText}
  
 StatusUpdate    post the update {going to stop by the grocery store this evening|UpdateText}
 This set includes sample slot values ranging from one word (“arrived”) to about ten words. This type of sample coverage should provide better recognition.
+
+#Modifications
+Something else I did on my echo was make 3 duplicate skills out of this and give them different invocation names. 
+
+For example I named one skill "Jason" and modified the index.js file slightly so that the autoremote message always starts with the send text to Jason command. So now I can say "Alexa, tell Jason that (message)" and it will send a message to Jason. Easier than saying "Alexa, tell Tasker to text Jason (message)". You could also say "Alexa, tell Jason to text (Person) (Message). If you set up a different AutoRemote address for each skill then asking Jason to text would send the text from his phone, then saying "Tell Bridget to text (Person) (Message)" would send the text from her phone. That way multiple users in the house aren't all sending texts coming from one persons phone.
