@@ -44,7 +44,9 @@ It's worth reading through the Amazon page here about designing the voice interf
 https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/defining-the-voice-interface
 
 Examples are: "Alexa, tell Tasker to text (Person) (message)"
+
 "Alexa, ask Tasker to send a message to (Person) saying (message)"
+
 "Alexa, tell Tasker to (AutoRemote message)"
 
 Sometimes if you just say Tell Tasker (message) it doesn't capture. It sometimes wants an "ask Tasker for" "tell Tasker to" format.
