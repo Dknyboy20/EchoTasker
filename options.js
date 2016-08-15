@@ -1,5 +1,5 @@
 var options = {
-  appid: "amzn1.echo-sdk-ams.app.xxxxxxxxx",  //Put your app id here found at developer.amazon.com
+  appid: "YOUR_APPLICATION_ID",  //Put your application id here found at developer.amazon.com example (amzn1.ask.skill.xxxxxxxxx)
   ARkey: "YOUR_AUTOREMOTE_KEY_HERE", //Put your AutoRemote key here in quotes, find it at your goo.gl/xxxxxx site
 
   headers: {
