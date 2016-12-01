@@ -6,10 +6,8 @@ Video sample here:
 https://www.youtube.com/watch?v=cSLdjHmf9K4
 I try to reply to all messages on the youtube video if you want to contact me.
 
-Let me note first that I don't know any programming languages, this type of stuff has always been a hobby and interesting to me. I was reading through the examples Amazon gives you for setting up a skill and around the same time came across and set up the Sonos skill found here: https://github.com/rgraciano/echo-sonos
+Let me note first that I'm not a programmer by trade, this type of stuff has always been a hobby and interesting to me and I'm learning as I go. I was reading through the examples Amazon gives you for setting up a skill and around the same time came across and set up the Sonos skill found here: https://github.com/rgraciano/echo-sonos
 It's an awesome skill, works great to control your Sonos stuff from the Echo so check it out as well. After setting it up I started reading through his files and just set up a duplicate on my Echo with a different name, then started modifying the code to get a feel for how it worked. So long story short, since I don't have a full grasp of what all the code does there are some pieces of code that I'm sure aren't necessary but I just don't know enough to simplify it since I just modified and copied/pasted from other skills. I'm still reading up on Echo skills and javascript and playing around with things to add in. But it does work well as is.
-
-Update 4/3/16: I've learned a lot more since originally making this skill. On my personal setup I now have Alexa repeat what she heard for text message confirmation before sending it. She will also continue listening after each autoremote message so you can send additional autoremote messages without starting over. I'll update it here when I get a chance to make a few more changes.
 
 #Instructions 
 Go to developer.amazon.com and create an account.  Once on the home page click on Alexa at the top.
