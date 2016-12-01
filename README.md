@@ -111,3 +111,7 @@ This set includes sample slot values ranging from one word (“arrived”) to ab
 Something else I did on my echo was make 3 duplicate skills out of this and give them different invocation names. 
 
 For example I named one skill "Jason" and modified the index.js file slightly so that the autoremote message always starts with the send text to Jason command. So now I can say "Alexa, tell Jason that (message)" and it will send a message to Jason. Easier than saying "Alexa, tell Tasker to text Jason (message)". You could also say "Alexa, tell Jason to text (Person) (Message). If you set up a different AutoRemote address for each skill then asking Jason to text would send the text from his phone, then saying "Tell Bridget to text (Person) (Message)" would send the text from her phone. That way multiple users in the house aren't all sending texts coming from one person's phone.
+
+I have also played around using IFTTT instead, and sending the text through my email. Then your phone doesn't have to be on to send the text. Only negative to that is replies go back to that email address.
+
+Another thing I do a lot is make a new skill and name it something like "TV pause". Then under the launch intent section of the index.js code you have it send an AutoRemote message (or in my case a direct call to the Kodi API) and when you launch the skill by simply saying it's name ("Alexa, TV pause") then the launch intent fires sending the pause command to the TV or whatever device/action you wanted.
