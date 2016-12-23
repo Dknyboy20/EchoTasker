@@ -1,5 +1,8 @@
 Note: Amazon.Literal slot is being deprecated in February 2017. They have provided another method to use involving custom slots but I haven't gotten around to testing it and updating this skill. I will eventually but just wanted to warn you it may eventually become unusable as is.
 
+Here is the information on that from Amazon:
+https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/migrating-to-the-improved-built-in-and-custom-slot-types#replacing-literal-with-custom-slot-types
+
 # EchoTasker
 Amazon Echo skill that sends an AutoRemote message to Tasker with your speech.
 You can also use it to send SMS messages from the Echo with Tasker.
